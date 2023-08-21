@@ -32,6 +32,9 @@ nav {
   width: 100%;
   z-index: 99;
 }
+nav a {
+  text-decoration: none;
+}
 nav h2 {
   color: rgb(0, 0, 0);
   font-size: 35px;
