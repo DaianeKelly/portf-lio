@@ -7,7 +7,7 @@ function enviaremail() {
   var templateParams = {
     from_name: nome.value,
     message: texto.value,
-    email: email.value,
+    from_email: email.value,
   };
   if (!nome.value || !texto.value || !email.value) {
     alert("Campos Obrigatórios");
