@@ -13,6 +13,7 @@ html {
   font-family: var(--fonte1);
   font-weight: bolder;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .background {
   background-image: url(imagens/rosa\ liso.jpg);
