@@ -112,7 +112,19 @@
     <!--Contatos-->
     <div class="contate-me" id="contato">
       <p>Contate-me para a criação de um site para você</p>
-      <button class="button">Enviar mensagem</button
+      <label for="contatonome">Nome:</label>
+      <input type="text" name="contatonome" id="nome" class="contatonome" />
+      <label for="contatotexto">Mensagem:</label>
+      <textarea
+        name="contatotexto"
+        id="texto"
+        cols="30"
+        rows="10"
+        class="contatotexto"
+      ></textarea>
+
+      <button class="button" id="butenviar" onclick="enviaremail()">
+        Enviar mensagem</button
       ><!--button-->
     </div>
     <!--contate-me-->
@@ -139,4 +151,13 @@
     </footer>
   </body>
   <script src="scripts.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("1qVuh0dvXd3atVPr4");
+    })();
+  </script>
 </html>
