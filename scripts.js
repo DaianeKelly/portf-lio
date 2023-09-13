@@ -9,7 +9,7 @@ function enviaremail() {
     message: texto.value,
     email: email.value,
   };
-  if (!nome.value || !texto.value) {
+  if (!nome.value || !texto.value || !email.value) {
     alert("Campos Obrigatórios");
     return;
   }
